@@ -1,11 +1,10 @@
-cedars__download is a python function to get CEDARS claims data from the web
-to use the cedars__download function:
+*cedars__download* is a python function to get CEDARS claims data from the web.To use the *cedars__download* function:
 
 ## Step 1: Working Directory
-save cedars__download.py in the same folder as the notebook you use to do analysis on CEDARS data
+save *cedars__download.py* in the same folder as the notebook you use to do analysis on CEDARS data
 
 ## Step 2: Call the Data Download Function
-use this code in your notebook to call the cedars__download function:
+use this code in your notebook to call the *cedars__download* function:
 
 from cedars__download import fetch_cedars_claims
 local_path = fetch_cedars_claims(year)
@@ -19,4 +18,4 @@ if not local_path.exists():
 claims_data= pd.read_parquet(local_path, engine="pyarrow")
 
 ## Step 4: Analysis
-Do analaysis on dataframe "claims_data". Happy coding! :)
+Do analaysis on dataframe *claims_data*. Happy coding! :)
