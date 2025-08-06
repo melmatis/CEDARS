@@ -15,10 +15,7 @@ use this code in your notebook to call the *cedars__download* function:
 ## Step 3: Create Dataframe
 Make the claims data that you downloaded to a local path into a dataframe; also ensure the file exists first with this code:
 
-`if not local_path.exists():`
-
-
-    `raise FileNotFoundError(f"No Parquet file for {year} at {local_path}")`
+`if not local_path.exists(): raise FileNotFoundError(f"No Parquet file for {year} at {local_path}")`
 
     
 `claims_data= pd.read_parquet(local_path, engine="pyarrow")`
