@@ -5,8 +5,6 @@
 
 `pip install pyarrow`
 
-`pip install`
-
 `pip install fastparquet`
 
 ## Step 1: Working Directory
