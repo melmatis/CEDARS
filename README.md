@@ -21,4 +21,4 @@ Make the claims data that you downloaded to a local path into a dataframe; also 
 `claims_data= pd.read_parquet(local_path, engine="pyarrow")`
 
 ## Step 4: Analysis
-Do analaysis on dataframe *claims_data*. For example, my analysis is in *CEDARS_DataAnalysis* Happy coding! :)
+Do analaysis on dataframe *claims_data*. For example, my analysis is in *CEDARS_DataAnalysis*.Happy coding! :)
