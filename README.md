@@ -1,33 +1,21 @@
 *cedars__download* is a python function to get CEDARS claims data from the web.To use the *cedars__download* function:
-
-## Ensure you have the right packages
-in the notebook:
+## Step 1: Ensure you have the right packages in your Analysis script
 `import pandas as pd`
 
 `from pathlib import Path`
 
 `import fastparquet`
 
-ensure you have these installed to run the python function:
-
-`pathlib`
-
-`io` 
-
-`BytesIO` 
-
-`TextIOWrapper`
-
-`zipfile`
+## Step 2: Ensure you have these installed to run the python function:
 
 `requests`
 
 `pandas`
 
-## Step 1: Working Directory
+## Step 3: Working Directory
 save *cedars__download.py* in the same folder as the notebook you use to do analysis on CEDARS data
 
-## Step 2: Call the Data Download Function
+## Step 4: Call the Data Download Function
 use this code in your notebook to call the *cedars__download* function:
 
 `from cedars__download import fetch_cedars_claims`
@@ -36,7 +24,7 @@ use this code in your notebook to call the *cedars__download* function:
 
 `print(local_path)`
 
-## Step 3: Create Dataframe
+## Step 5: Create Dataframe
 Make the claims data that you downloaded to a local path into a dataframe; also ensure the file exists first with this code:
 
 `if not local_path.exists(): raise FileNotFoundError(f"No Parquet file for {year} at {local_path}")`
@@ -44,5 +32,5 @@ Make the claims data that you downloaded to a local path into a dataframe; also 
     
 `claims_data= pd.read_parquet(local_path, engine="pyarrow")`
 
-## Step 4: Analysis
+## Step 6: Analysis 
 Do analaysis on dataframe *claims_data*. For example, my analysis is in *CEDARS_DataAnalysis*.Happy coding! :)
