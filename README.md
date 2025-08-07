@@ -1,11 +1,28 @@
 *cedars__download* is a python function to get CEDARS claims data from the web.To use the *cedars__download* function:
 
 ## These are the pip install packages that the python script needs to download the data from CEDARS 
-` pip install requests`
+in the notebook:
+`import pandas as pd`
 
-`pip install pyarrow`
+`from pathlib import Path`
 
-`pip install fastparquet`
+`import fastparquet`
+
+ensure you have these installed to run the python function:
+
+`pathlib`
+
+`io` 
+
+`BytesIO` 
+
+`TextIOWrapper`
+
+`zipfile`
+
+`requests`
+
+`pandas`
 
 ## Step 1: Working Directory
 save *cedars__download.py* in the same folder as the notebook you use to do analysis on CEDARS data
