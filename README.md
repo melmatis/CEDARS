@@ -1,4 +1,4 @@
-## CEDARS Data Download
+# CEDARS Data Download
 
 TL;DR: This will provide some utilities to download and manage CEDARS data to make it useful to load into your jupyter notebooks for analysis. 
 
