@@ -6,7 +6,7 @@ TL;DR: This will provide some utilities to download and manage CEDARS data to ma
 
 *cedars__download* is a python function to get CEDARS claims data from the web.To use the *cedars__download* function:
 
-## Step 1: Ensure you have these installed to run the python function:
+## Step 1: Install the packages to run the python function:
 
 `pip install requests`
 
