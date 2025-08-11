@@ -14,7 +14,7 @@ TL;DR: This will provide some utilities to download and manage CEDARS data to ma
 
 `%pip install fastparquet`
 
-`%pip install pyarrow`
+`%pip install pyarrow` (use fast parquet instead)
 
 ## Step 2: Working Directory
 save *cedars__download.py* in the same folder as the notebook you use to do analysis on CEDARS data
