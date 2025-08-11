@@ -8,11 +8,13 @@ TL;DR: This will provide some utilities to download and manage CEDARS data to ma
 
 ## Step 1: Install the packages to run the python function:
 
-`pip install requests`
+`%pip install requests`
 
-`pip install pandas`
+`%pip install pandas`
 
-`pip install fastparquet`
+`%pip install fastparquet`
+
+`%pip install pyarrow`
 
 ## Step 2: Working Directory
 save *cedars__download.py* in the same folder as the notebook you use to do analysis on CEDARS data
