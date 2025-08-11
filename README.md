@@ -12,7 +12,7 @@ TL;DR: This will provide some utilities to download and manage CEDARS data to ma
 
 `%pip install pandas`
 
-# Here are a couple engine options; engine is called in the `pd.read_parquet` function. Try fastparquet. 
+### Here are a couple engine options; engine is called in the `pd.read_parquet` function. Try fastparquet. 
 `%pip install fastparquet`
 
 `%pip install pyarrow` 
