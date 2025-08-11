@@ -2,7 +2,7 @@
 
 TL;DR: This will provide some utilities to download and manage CEDARS data to make it useful to load into your jupyter notebooks for analysis. 
 
-# How to Use:
+### How to Use:
 
 *cedars__download* is a python function to get CEDARS claims data from the web.To use the *cedars__download* function:
 
