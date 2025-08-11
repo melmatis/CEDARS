@@ -34,7 +34,7 @@ Make the claims data that you downloaded to a local path into a dataframe; also 
 `if not local_path.exists(): raise FileNotFoundError(f"No Parquet file for {year} at {local_path}")`
 
     
-`claims_data= pd.read_parquet(local_path, engine="pyarrow")`
+`claims_data= pd.read_parquet(local_path, engine="fastparquet")`
 
 ## Step 5: Analysis 
 Do analaysis on dataframe *claims_data*. For example, my analysis is in *CEDARS_DataAnalysis*.
