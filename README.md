@@ -2,11 +2,11 @@
 
 ## Step 1: Ensure you have these installed to run the python function:
 
-`requests`
+`pip install requests`
 
-`pandas`
+`pip install pandas`
 
-`fastparquet`
+`pip install fastparquet`
 
 ## Step 2: Working Directory
 save *cedars__download.py* in the same folder as the notebook you use to do analysis on CEDARS data
