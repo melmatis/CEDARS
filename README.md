@@ -54,7 +54,8 @@ for y in years:
     if not Path(p).exists():
         print(f"Skipping {y}: no Parquet at {p}")
         continue
-    paths.append(Path(p))```
+    paths.append(Path(p))
+```
 
 
 
