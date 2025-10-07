@@ -50,8 +50,6 @@ use this code in your notebook to call the *cedars__download* function for singl
 
 For multiple years:
 
-`from pathlib import Path`
-
 ```python
 paths = []
 for y in years:
