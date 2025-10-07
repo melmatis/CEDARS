@@ -30,7 +30,7 @@ create a variable called `year` and set it equal to a 4 digit year in integer fo
 
 For multiple years: 
 
-`year = [2023, 2024]`
+`years = [2023, 2024]`
 
 ## Step 4: Call Libraries
 
