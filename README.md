@@ -49,15 +49,15 @@ For multiple years:
 
 `for y in years:`
 
-    `p = fetch_cedars_claims(y)    # downloads (or returns cached) Parquet for that year`
+`p = fetch_cedars_claims(y)    # downloads (or returns cached) Parquet for that year`
     
-    `if not Path(p).exists():`
+`if not Path(p).exists():`
     
-        `print(f"Skipping {y}: no Parquet at {p}")`
+`print(f"Skipping {y}: no Parquet at {p}")`
+
+`continue`
         
-        `continue`
-        
-    `paths.append(Path(p))`
+`paths.append(Path(p))`
 
 
 
