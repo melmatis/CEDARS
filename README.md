@@ -32,7 +32,14 @@ For multiple years:
 
 `year = [2023, 2024]`
 
-## Step 4: Call the Data Download Function
+## Step 4: Call Libraries
+
+`from pathlib import Path`
+
+`import pandas as pd`
+
+
+## Step 5: Call the Data Download Function
 use this code in your notebook to call the *cedars__download* function:
 
 `from cedars__download import fetch_cedars_claims`
@@ -59,7 +66,7 @@ for y in years:
 
 
 
-## Step 5: Create Dataframe
+## Step 6: Create Dataframe
 Make the claims data that you downloaded to a local path into a dataframe; also ensure the file exists first with this code:
 
 `if not local_path.exists(): raise FileNotFoundError(f"No Parquet file for {year} at {local_path}")`
@@ -79,5 +86,5 @@ for p in paths:
 claims_data = pd.concat(claims_data, ignore_index=True, sort=False) if claims_data else pd.DataFrame()
 ```
 
-## Step 6: Analysis 
+## Step 7: Analysis 
 Do analaysis on dataframe *claims_data*. 
