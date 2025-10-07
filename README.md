@@ -42,13 +42,21 @@ use this code in your notebook to call the *cedars__download* function:
 `print(local_path)`
 
 For multiple years:
+
 `from pathlib import Path`
+
 `paths = []`
+
 `for y in years:`
+
     `p = fetch_cedars_claims(y)    # downloads (or returns cached) Parquet for that year`
+    
     `if not Path(p).exists():`
+    
         `print(f"Skipping {y}: no Parquet at {p}")`
+        
         `continue`
+        
     `paths.append(Path(p))`
 
 
