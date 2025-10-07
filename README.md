@@ -45,19 +45,16 @@ For multiple years:
 
 `from pathlib import Path`
 
-`paths = []`
+```python
+from pathlib import Path
 
-`for y in years:`
-
-`p = fetch_cedars_claims(y)    # downloads (or returns cached) Parquet for that year`
-    
-`if not Path(p).exists():`
-    
-`print(f"Skipping {y}: no Parquet at {p}")`
-
-`continue`
-        
-`paths.append(Path(p))`
+paths = []
+for y in years:
+    p = fetch_cedars_claims(y)  # downloads (or returns cached) Parquet for that year
+    if not Path(p).exists():
+        print(f"Skipping {y}: no Parquet at {p}")
+        continue
+    paths.append(Path(p))
 
 
 
