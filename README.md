@@ -68,14 +68,16 @@ Make the claims data that you downloaded to a local path into a dataframe; also 
 `claims_data= pd.read_parquet(local_path, engine="fastparquet")`
 
 For multiple years:
-`claims_data = []`
+```python
+claims_data = []
 
-`for p in paths:`
-    `df = pd.read_parquet(p, engine="fastparquet")`
+for p in paths:
+    df = pd.read_parquet(p, engine="fastparquet")
    
-    `claims_data.append(df)`
+    claims_data.append(df)
 
-`claims_data = pd.concat(claims_data, ignore_index=True, sort=False) if claims_data else pd.DataFrame()`
+claims_data = pd.concat(claims_data, ignore_index=True, sort=False) if claims_data else pd.DataFrame()
+```
 
 ## Step 6: Analysis 
 Do analaysis on dataframe *claims_data*. 
