@@ -30,7 +30,7 @@ create a variable called `year` and set it equal to a 4 digit year in integer fo
 
 For multiple years: 
 
-`years = [2023, 2024]`
+`year = [2023, 2024]`
 
 ## Step 4: Call Libraries
 
@@ -52,7 +52,7 @@ For multiple years:
 
 ```python
 paths = []
-for y in years:
+for y in year:
     p = fetch_cedars_claims(y)  # downloads (or returns cached) Parquet for that year
     if not Path(p).exists():
         print(f"Skipping {y}: no Parquet at {p}")
