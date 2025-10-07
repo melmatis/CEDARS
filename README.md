@@ -40,7 +40,7 @@ For multiple years:
 
 
 ## Step 5: Call the Data Download Function
-use this code in your notebook to call the *cedars__download* function:
+use this code in your notebook to call the *cedars__download* function for single year:
 
 `from cedars__download import fetch_cedars_claims`
 
@@ -71,6 +71,7 @@ Make the claims data that you downloaded to a local path into a dataframe; also 
 
 `if not local_path.exists(): raise FileNotFoundError(f"No Parquet file for {year} at {local_path}")`
 
+For single year:
     
 `claims_data= pd.read_parquet(local_path, engine="fastparquet")`
 
