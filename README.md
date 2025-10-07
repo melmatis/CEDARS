@@ -53,8 +53,6 @@ For multiple years:
 `from pathlib import Path`
 
 ```python
-from pathlib import Path
-
 paths = []
 for y in years:
     p = fetch_cedars_claims(y)  # downloads (or returns cached) Parquet for that year
