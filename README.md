@@ -26,7 +26,7 @@ save *cedars__download.py* in the same folder as the notebook you use to do anal
 ## Step 3: Define the Year(s)
 create a variable called `year` and set it equal to a 4 digit year in integer form. For example:
 
-`year = [2023]`
+`year = 2023`
 
 For multiple years: 
 
