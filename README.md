@@ -21,7 +21,12 @@ TL;DR: This will provide some utilities to download and manage CEDARS data to ma
 ## Step 2: Working Directory
 save *cedars__download.py* in the same folder as the notebook you use to do analysis on CEDARS data
 
-## Step 3: Call the Data Download Function
+## Step 3: Define the Year(s)
+create a variable called `year` and set it equal to a 4 digit year in integer form. For example"
+
+`year = [2023,2024]`
+
+## Step 4: Call the Data Download Function
 use this code in your notebook to call the *cedars__download* function:
 
 `from cedars__download import fetch_cedars_claims`
@@ -30,7 +35,7 @@ use this code in your notebook to call the *cedars__download* function:
 
 `print(local_path)`
 
-## Step 4: Create Dataframe
+## Step 5: Create Dataframe
 Make the claims data that you downloaded to a local path into a dataframe; also ensure the file exists first with this code:
 
 `if not local_path.exists(): raise FileNotFoundError(f"No Parquet file for {year} at {local_path}")`
@@ -38,5 +43,5 @@ Make the claims data that you downloaded to a local path into a dataframe; also 
     
 `claims_data= pd.read_parquet(local_path, engine="fastparquet")`
 
-## Step 5: Analysis 
+## Step 6: Analysis 
 Do analaysis on dataframe *claims_data*. For example, my analysis is in *CEDARS_DataAnalysis*.
