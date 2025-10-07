@@ -22,7 +22,7 @@ TL;DR: This will provide some utilities to download and manage CEDARS data to ma
 save *cedars__download.py* in the same folder as the notebook you use to do analysis on CEDARS data
 
 ## Step 3: Define the Year(s)
-create a variable called `year` and set it equal to a 4 digit year in integer form. For example"
+create a variable called `year` and set it equal to a 4 digit year in integer form. For example:
 
 `year = [2023,2024]`
 
